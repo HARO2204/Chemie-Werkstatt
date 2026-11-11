@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sand und Salz trennen. Ein interaktives Chemie-Labor mit Arbeitsplan und Versuchsprotokoll für die 4. Klasse.">
+<title>Chemie-Werkstatt · Stoffgemische trennen</title>
+<link rel="stylesheet" href="../werkstatt.css">
+<link rel="stylesheet" href="./trennlabor.css">
+<script defer src="./trennlabor.js"></script>
+</head>
+<body>
+<header><div class="top"><span class="brand"><a href="../">Chemie-Werkstatt</a></span><span class="class">4. Klasse · Mittelschule</span></div></header>
+<main>
+<section class="hero separation-hero"><div><p class="subject">CHEMIE-WERKSTATT</p><h1>Stoffgemische trennen</h1><p>Du bekommst Sand und Speisesalz in einem Becher. Hole beide Stoffe getrennt zurück. Wähle die passenden Verfahren und beobachte, wohin die Stoffe gelangen.</p><a href="#labor">Trennlabor öffnen ↓</a></div><img src="./laboraufbau.jpg" width="900" height="600" alt="Glastrichter und Becherglas neben zwei Schälchen mit Sand und Speisesalz"></section>
+<nav class="card module-nav" aria-labelledby="module-menu"><h2 id="module-menu">Module der Chemie-Werkstatt</h2><div class="module-links"><a href="../">Säuren, Basen &amp; pH</a><a href="../stoffe-teilchen/">Stoffe &amp; Teilchen</a><a href="../atombau/">Atombau</a><a href="../reaktionsgleichungen/">Reaktionsgleichungen</a><a href="./" aria-current="page">Stoffgemische trennen</a></div></nav>
+<section id="labor" class="card">
+<h2>Dein virtuelles Trennlabor</h2>
+<p>Wähle immer einen Schritt. Wenn du feststeckst, öffne den Tipp.</p>
+<div class="separation-grid">
+<div class="separation-stage">
+<figure><canvas id="separation-picture" width="640" height="390" role="img" aria-label="Becher mit trockenem Sand-Salz-Gemisch"></canvas><figcaption id="picture-caption">Ausgangsgemisch im Becher</figcaption></figure>
+<label class="model-toggle"><input type="checkbox" id="particles"> Gelöstes Salz im Teilchenbild zeigen</label>
+<p class="separation-legend"><span><i class="legend-sand"></i> Sand</span><span><i class="legend-salt"></i> festes Salz</span><span><i class="legend-water"></i> Wasser</span><span id="ion-legend" hidden><i class="legend-ion"></i> gelöste Ionen</span></p>
+</div>
+<div class="separation-controls">
+<h3>Was machst du als Nächstes?</h3>
+<div class="separation-buttons">
+<button type="button" data-action="dissolve">Wasser zugeben und rühren</button>
+<button type="button" data-action="filter">Durch Filterpapier gießen</button>
+<button type="button" data-action="evaporate">Wasser verdunsten lassen</button>
+</div>
+<p id="step-feedback" role="status"></p>
+<details id="step-hint"><summary>Tipp zum aktuellen Schritt</summary><p id="hint-text"></p></details>
+<p><button type="button" id="start-over">Von vorne beginnen</button></p>
+</div>
+</div>
+<table class="separation-table"><caption>Wo sind die Stoffe jetzt?</caption><thead><tr><th scope="col">Stoff</th><th scope="col">Ort oder Zustand</th></tr></thead><tbody><tr><th scope="row">Sand</th><td id="where-sand"></td></tr><tr><th scope="row">Salz</th><td id="where-salt"></td></tr><tr><th scope="row">Wasser</th><td id="where-water"></td></tr></tbody></table>
+<details><summary>Was zeigt das Modell?</summary><p>Die Darstellung ist schematisch. Gelöstes Kochsalz liegt als Natrium- und Chlorid-Ionen vor. Diese sind in Wirklichkeit unsichtbar. Beim Filtrieren gelangen die gelösten Ionen mit dem Wasser durch das Filterpapier. Verdunsten kann bei Raumtemperatur geschehen und dauert im Versuch wesentlich länger als in der Simulation.</p></details>
+<noscript>Für das Trennlabor muss JavaScript aktiviert sein. Der Arbeitsplan unten kann auch ohne Simulation bearbeitet werden.</noscript>
+</section>
+<section id="arbeitsplan" class="card print-target">
+<h2>Arbeitsplan und Versuchsprotokoll</h2>
+<p class="muted">Etwa 35 Minuten · Heft und Stift</p>
+<div class="task"><h3>1. Vermute</h3><p>Welcher Stoff löst sich in Wasser? Welcher Stoff bleibt im Filter? Notiere deine Vermutung und begründe sie.</p><label><input type="checkbox" data-step="guess"> Vermutung notiert</label></div>
+<div class="task"><h3>2. Beobachte</h3><p>Führe die Trennung im virtuellen Labor durch. Protokolliere zu jedem Schritt, was du siehst und wo Sand, Salz und Wasser sind.</p><label><input type="checkbox" data-step="test"> Versuch protokolliert</label></div>
+<div class="task"><h3>3. Vergleiche</h3><p>Im echten Versuch lässt deine Lehrperson das Filtrat in einer flachen Schale stehen. Was sollte später sichtbar sein? Warum kann die Dauer von der Simulation abweichen?</p><label><input type="checkbox" data-step="compare"> Vergleich begründet</label></div>
+<details class="paper-preview"><summary>Druckvorschau öffnen</summary><article class="paper">
+<h3>Stoffgemische trennen</h3><p class="paper-title">Versuchsprotokoll · Chemie-Werkstatt · 4. Klasse</p><p>Name: ________________________ &nbsp; Datum: _____________</p>
+<div class="paper-step"><h4>1. Vermutung</h4><p>Welcher Stoff löst sich in Wasser? Welcher Stoff bleibt im Filter?</p><span class="line"></span><span class="line"></span></div>
+<div class="paper-step"><h4>2. Beobachtungen</h4><p>Die Bildfolge zeigt vier mögliche Beobachtungen. Beschreibe den Zustand im Becher, im Filter und in der Schale. Ergänze, wo sich das Salz befindet.</p>
+<div class="protocol-pictures">
+<figure><canvas data-protocol-state="0" width="360" height="230" role="img" aria-label="Trockenes Sand-Salz-Gemisch"></canvas><figcaption>Ausgangsgemisch</figcaption></figure>
+<figure><canvas data-protocol-state="1" width="360" height="230" role="img" aria-label="Becher nach Zugabe von Wasser"></canvas><figcaption>Nach dem Rühren</figcaption></figure>
+<figure><canvas data-protocol-state="2" width="360" height="230" role="img" aria-label="Filter und Auffangbecher"></canvas><figcaption>Nach dem Filtrieren</figcaption></figure>
+<figure><canvas data-protocol-state="3" width="360" height="230" role="img" aria-label="Flache Schale mit Salzkristallen"></canvas><figcaption>Nach dem Verdunsten</figcaption></figure>
+</div>
+<span class="line"></span><span class="line"></span><span class="line"></span></div>
+<div class="paper-step"><h4>3. Vergleich mit dem echten Versuch</h4><p>Was könnte beeinflussen, wie schnell das Wasser verdunstet?</p><span class="line"></span></div>
+</article></details>
+<div class="document-controls"><button type="button" id="separation-print">Drucken / als PDF speichern</button></div>
+</section>
+<section class="card" id="selbstcheck"><h2>Selbstcheck</h2>
+<fieldset><legend>Wo ist das Salz direkt nach dem Filtrieren?</legend>
+<label><input type="radio" name="result" value="filter"> Im Filterpapier, gemeinsam mit dem Sand</label>
+<label><input type="radio" name="result" value="water"> Gelöst in der Flüssigkeit im Auffangbecher</label>
+<label><input type="radio" name="result" value="air"> Als Gas in der Luft</label></fieldset>
+<button class="primary" type="button" id="separation-check">Antwort prüfen</button><p id="check-feedback" class="feedback" role="status"></p>
+</section>
+</main>
+<footer>Fachquelle zum Versuch: <a href="https://edu.rsc.org/experiments/separating-sand-and-salt-by-filtering-and-evaporation/386.article">Royal Society of Chemistry · Sand und Salz trennen</a></footer>
+</body></html>

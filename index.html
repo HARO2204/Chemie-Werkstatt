@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Säuren, Basen und pH erforschen. Interaktives Lernmodul für die 4. Klasse Mittelschule.">
+<title>Chemie-Werkstatt · Säuren, Basen &amp; pH</title>
+<style>
+:root{color-scheme:light;--ink:#18243c;--muted:#4b5b72;--paper:#fff;--back:#f4f7fc;--line:#d9e3f2;--blue:#2446b8;--navy:#152749;--lime:#dbf58d;--purple:#ded5fc}
+*{box-sizing:border-box}html{scroll-padding-top:16px}body{margin:0;background:var(--back);color:var(--ink);font:16px/1.55 system-ui,sans-serif}h1,h2,h3,p{margin:0 0 .6em}h1,h2,h3{line-height:1.12;letter-spacing:-.035em}h1{font-size:clamp(2.65rem,7.8vw,5.2rem)}h2{font-size:clamp(1.7rem,4vw,2.65rem)}h3{font-size:1.2rem}a{color:var(--blue)}:focus-visible{outline:3px solid #2450cf;outline-offset:4px}button,input,select{font:inherit}button,select,input[type=range],input[type=checkbox],input[type=radio],summary{cursor:pointer}button{border:1px solid #bfcee6;border-radius:8px;background:#fff;padding:.45rem .75rem;color:var(--ink);font-weight:650}button:hover{background:#edf2ff}button.primary,.hero a{background:var(--lime);color:#192839;border-color:transparent}header{background:#fff;border-bottom:1px solid var(--line)}.top,main,footer{max-width:1080px;margin:auto;padding-inline:22px}.top{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{font-size:1.12rem;font-weight:800;letter-spacing:-.04em}.class{font-size:.83rem;color:var(--muted)}main{padding-top:24px}.hero{position:relative;overflow:hidden;isolation:isolate;border-radius:18px;background:linear-gradient(115deg,#13264a 48%,#39286b);color:white;padding:clamp(24px,5vw,54px);margin-bottom:28px}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 47%,#cbb9fb3d 0 9%,transparent 9.5% 15%,#ddcff81f 15.5% 16%,transparent 16.5% 23%,#ddcff81f 23.5% 24%,transparent 24.5%);z-index:-1}.hero .subject{color:var(--lime);font-size:.84rem;font-weight:750;letter-spacing:.09em}.hero p{color:#e1eafa;max-width:39ch}.hero a{display:inline-block;text-decoration:none;border-radius:8px;font-weight:750;padding:.5rem .8rem;margin-top:.45rem}.card{border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:clamp(14px,3vw,24px);margin-bottom:14px}.muted{color:var(--muted)}.lab{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(280px,1.2fr);gap:12px;margin:14px 0}.controls,.readout{border:1px solid var(--line);background:#f7f9fe;border-radius:10px;padding:12px;min-width:0}.control+.control{border-top:1px solid var(--line);margin-top:9px;padding-top:9px}.control label{display:block;font-size:.88rem;margin:5px 0}.control output{float:right;font-weight:800;color:var(--blue)}.control input,.control select{width:100%;accent-color:var(--blue)}.control select{border:1px solid #b7c7e1;border-radius:6px;padding:.34rem;background:white;color:var(--ink)}.control input[type=range]{margin:0}.control strong{font-size:1.02rem}.readout .probes{display:grid;grid-template-columns:1fr 1fr;gap:8px}.probe{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px}.probe b{font-size:.85rem}.swatch{height:54px;border-radius:6px;border:1px solid #141f3340;margin:5px 0}.scale{position:relative;padding:21px 0;margin:2px 8px}.spectrum{height:11px;border-radius:6px;background:linear-gradient(90deg,#c33269,#bc4d8e,#795bb0,#32877e,#baad58)}.marker{position:absolute;transform:translateX(-50%);background:#fff;border:1px solid #526786;border-radius:4px;width:17px;text-align:center;font-size:.72rem;font-weight:800;line-height:16px}.marker.a{top:2px}.marker.b{bottom:2px}.scale-labels{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted)}.comparison,.feedback:not(:empty){background:#e8efff;color:#1e3d88;border-radius:8px;padding:8px;font-weight:700;margin:.8rem 0 0}.feedback[data-correct=true]{background:#e0f5e9;color:#1d614b}details{background:#f4f6fb;border-radius:8px;padding:8px 10px;margin-top:8px}summary{font-weight:700}details p{margin:.4rem 0 0}ol,ul{padding-left:1.4em}li{margin:5px 0}.task{padding-top:11px;margin-top:12px;border-top:1px solid var(--line)}.task label,fieldset label{display:block}input[type=checkbox],input[type=radio]{accent-color:var(--blue);width:1rem;height:1rem;vertical-align:-.12rem}fieldset{border:0;margin:.7rem 0;padding:0}legend{font-weight:750}footer{color:var(--muted);font-size:.83rem;padding-block:8px 23px}.no-print{margin-top:.6em}.print-only{display:none}
+@media(max-width:640px){.top,main,footer{padding-inline:12px}.lab{grid-template-columns:1fr}.hero{margin-bottom:14px}}
+@media print{body,header{background:#fff}header,.hero,#labor,#selbstcheck,footer,.no-print,details{display:none!important}main{padding:0}.card{border:0;padding:0}.print-only{display:block}.task{break-inside:avoid}.task h3{font-size:14pt}a{color:#111}}
+</style>
+</head>
+<body>
+<header><div class="top"><span class="brand">Chemie-Werkstatt</span><span class="class">4. Klasse · Mittelschule</span></div></header>
+<main>
+<section class="hero">
+<p class="subject">CHEMIE IM ALLTAG</p>
+<h1>Säuren, Basen &amp; pH</h1>
+<p>Warum färbt sich Rotkrautsaft in Essig anders als in einer Natronlösung? Vergleiche zwei Proben und finde heraus, was der pH-Wert verrät.</p>
+<a href="#arbeitsplan">Arbeitsplan öffnen ↓</a>
+</section>
+<section class="card" id="arbeitsplan" aria-labelledby="plan-title">
+<h2 id="plan-title">Dein Arbeitsplan</h2>
+<p class="print-only">Chemie-Werkstatt · Säuren, Basen &amp; pH</p>
+<p class="print-only">Name: _____________________________ Datum: ________________</p>
+<p class="muted">Etwa 35 Minuten · Du brauchst dein Heft und einen Stift.</p>
+<section class="task">
+<h3>1. Vermute</h3>
+<p>Du hast Haushaltsessig, reines Wasser und eine Natronlösung. Welche Probe könnte sauer, neutral oder basisch sein? Schreib deine Vermutung ins Heft.</p>
+<label class="no-print"><input type="checkbox" data-step="guess"> Vermutung aufgeschrieben</label>
+</section>
+<section class="task">
+<h3>2. Vergleiche zwei Proben</h3>
+<p class="no-print">Öffne das <a href="#labor">pH-Labor</a>. Wähle Haushaltsessig als Probe A und reines Wasser als Probe B. Notiere pH-Wert, Farbe und Einordnung. Wiederhole den Vergleich mit Natronlösung statt Essig.</p>
+<p class="print-only">Nutze diese Modelldaten: Haushaltsessig pH 3, rosa. Reines Wasser pH 7, violett. Natronlösung pH 8,3, blau. Erstelle eine Tabelle mit Probe, pH-Wert, Farbe und Einordnung (sauer, neutral oder basisch).</p>
+<label class="no-print"><input type="checkbox" data-step="compare"> Beide Vergleiche im Heft notiert</label>
+</section>
+<section class="task">
+<h3>3. Begründe</h3>
+<p>Vergleiche pH 3 mit pH 5. Bei welcher Probe ist die Wasserstoffionenaktivität größer? Um welchen Faktor? Begründe deine Antwort mit der Zehnerregel.</p>
+<p>Stelle dir vor, eine stark gefärbte Probe soll mit Rotkrautsaft untersucht werden. Erkläre, warum sich die Indikatorfarbe dabei schwer ablesen lassen kann.</p>
+<label class="no-print"><input type="checkbox" data-step="explain"> Beide Erklärungen aufgeschrieben</label>
+</section>
+<details><summary>Hilfekarte öffnen</summary><p>Bei 25 °C gilt für dieses Modell: Unter pH 7 sauer, bei pH 7 neutral, über pH 7 basisch. Eine pH-Stufe weniger bedeutet zehnfache Wasserstoffionenaktivität. Bei zwei Stufen multiplizierst du zweimal mit 10.</p></details>
+<p class="print-only">Hilfekarte: Bei 25 °C gilt im Modell unter pH 7 sauer, bei pH 7 neutral, über pH 7 basisch. Pro pH-Stufe nach unten verzehnfacht sich die Wasserstoffionenaktivität.</p>
+<button class="no-print" id="print-plan">Arbeitsplan drucken</button>
+</section>
+<section class="card" id="labor" aria-labelledby="lab-title">
+<h2 id="lab-title">pH-Labor</h2>
+<p class="muted">Wähle zwei Beispiele oder stelle deine eigenen pH-Werte ein.</p>
+<div class="lab">
+<div class="controls" id="controls"></div>
+<div class="readout">
+<div class="probes" id="probes"></div>
+<div class="scale" aria-hidden="true"><div class="spectrum"></div><div class="marker a" id="mark-a">A</div><div class="marker b" id="mark-b">B</div></div>
+<div class="scale-labels" aria-hidden="true"><span>0 · sauer</span><span>7 · neutral</span><span>14 · basisch</span></div>
+<p id="comparison" class="comparison" role="status"></p>
+</div>
+</div>
+<details><summary>Was vereinfacht die Simulation?</summary><p>Die Beispielwerte und Rotkrautfarben sind Näherungen. Im echten Versuch beeinflussen unter anderem die Probe und der Rotkrautauszug die Farbe. Der Neutralpunkt liegt bei 25 °C ungefähr bei pH 7. Die Skala 0 bis 14 zeigt einen üblichen Bereich für wässrige Lösungen.</p></details>
+</section>
+<section class="card" id="selbstcheck" aria-labelledby="check-title">
+<h2 id="check-title">Selbstcheck</h2>
+<fieldset><legend>Probe A hat pH 4. Probe B hat pH 6. Um welchen Faktor ist die Wasserstoffionenaktivität in A größer?</legend>
+<label><input type="radio" name="answer" value="2"> 2-mal</label>
+<label><input type="radio" name="answer" value="10"> 10-mal</label>
+<label><input type="radio" name="answer" value="100"> 100-mal</label>
+</fieldset>
+<button class="primary" id="check">Antwort prüfen</button>
+<p class="feedback" id="feedback" role="status"></p>
+</section>
+</main>
+<footer>Fachquellen: <a href="https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh">OpenStax zu pH</a> · <a href="https://www.rhs.org.uk/education-learning/school-gardening/resources/curriculum-linked/red-cabbage-indicator">Royal Horticultural Society zu Rotkrautindikatoren</a></footer>
+<script>
+'use strict';
+const probes=['a','b'];
+const samples=[['','Eigener Wert'],[2,'Zitronensaft (ca. pH 2)'],[3,'Haushaltsessig (ca. pH 3)'],[7,'Reines Wasser (pH 7 bei 25 °C)'],[8.3,'Natronlösung (ca. pH 8,3)'],[10,'Seifenlösung (ca. pH 10)']];
+const colors=['#c33269','#c63c71','#c7467f','#bd4c8e','#ad529e','#9e55a5','#8a58ae','#795bb0','#586aaf','#377c9e','#32877e','#5a985b','#88a650','#a9ac4e','#baad58'];
+const colorNames=['Rot','Rot','Rosa','Rosa','Purpur','Violett','Violett','Violett','Blau','Blaugrün','Blaugrün','Grün','Gelbgrün','Gelbgrün','Gelblich'];
+const get=id=>document.getElementById(id);
+const format=(n,digits=1)=>new Intl.NumberFormat('de-AT',{maximumFractionDigits:digits}).format(n);
+const options=samples.map(([value,label])=>'<option value="'+value+'">'+label+'</option>').join('');
+get('controls').innerHTML=probes.map(id=>'<div class="control"><strong>Probe '+id.toUpperCase()+'</strong><label for="sample-'+id+'">Beispiel für Probe '+id.toUpperCase()+'</label><select id="sample-'+id+'">'+options+'</select><label for="ph-'+id+'">pH der Probe '+id.toUpperCase()+' <output id="value-'+id+'" for="ph-'+id+'"></output></label><input id="ph-'+id+'" type="range" min="0" max="14" step="0.1"></div>').join('')+'<button id="reset" type="button">Beispiele zurücksetzen</button>';
+get('probes').innerHTML=probes.map(id=>'<div class="probe"><b>Probe '+id.toUpperCase()+'</b><div class="swatch" id="swatch-'+id+'" aria-hidden="true"></div><b id="kind-'+id+'"></b></div>').join('');
+function compare(a,b){
+ const gap=Math.round(Math.abs(a-b)*10)/10;
+ return {gap,larger:a<b?'A':'B',factor:10**gap};
+}
+function render(){
+ const [a,b]=probes.map(id=>{
+  const value=Number(get('ph-'+id).value);
+  const color=Math.round(value);
+  get('value-'+id).textContent=format(value);
+  get('kind-'+id).textContent=(value<7?'Sauer':value>7?'Basisch':'Neutral')+' · '+colorNames[color];
+  get('swatch-'+id).style.background=colors[color];
+  get('mark-'+id).style.left=(value/14*100)+'%';
+  return value;
+ });
+ const {gap,larger,factor}=compare(a,b);
+ get('comparison').textContent=gap?'Probe '+larger+' hat eine etwa '+format(factor,2)+'-mal so hohe Wasserstoffionenaktivität. pH-Abstand: '+format(gap)+'.':'Beide Proben haben dieselbe Wasserstoffionenaktivität.';
+}
+function reset(){
+ ['3','7'].forEach((value,i)=>{
+  get('ph-'+probes[i]).value=value;
+  get('sample-'+probes[i]).value=value;
+ });
+ render();
+}
+for(const id of probes){
+ const range=get('ph-'+id), sample=get('sample-'+id);
+ range.addEventListener('input',()=>{sample.value='';render();});
+ sample.addEventListener('change',()=>{if(sample.value!=='')range.value=sample.value;render();});
+}
+get('reset').addEventListener('click',reset);
+get('print-plan').addEventListener('click',()=>window.print());
+get('check').addEventListener('click',()=>{
+ const selected=document.querySelector('input[name="answer"]:checked');
+ const correct=selected?.value==='100';
+ const feedback=get('feedback');
+ feedback.dataset.correct=String(correct);
+ feedback.textContent=!selected?'Wähle zuerst eine Antwort.':correct?'Richtig. Zwei pH-Stufen ergeben 10 × 10 = 100. Die Probe mit dem niedrigeren pH-Wert hat die höhere Wasserstoffionenaktivität.':'Prüfe den Abstand der beiden pH-Werte. Multipliziere für jede Stufe mit 10.';
+});
+for(const box of document.querySelectorAll('[data-step]')){
+ const key='chemie-ph-'+box.dataset.step;
+ try{box.checked=localStorage.getItem(key)==='true';}catch{}
+ box.addEventListener('change',()=>{try{localStorage.setItem(key,String(box.checked));}catch{}});
+}
+reset();
+</script>
+</body>
+</html>
